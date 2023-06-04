@@ -1,0 +1,589 @@
+﻿<html>
+<head>
+  <title>Omnivore homepage translation</title>
+  <style>
+    
+:root {
+  --default-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-monospace: 'Source Code Pro', monospace;
+  --background-primary: #ffffff;
+  --background-modifier-border: #ddd;
+  --text-accent: #705dcf;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: #2e3338;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --text-muted: #888888;
+  --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --text-error: #E4374B;
+  --background-primary-alt: '#fafafa';
+  --background-accent: '';
+  --interactive-accent: hsl( 254,  80%, calc( 68% + 2.5%));
+  --background-modifier-error: #E4374B;
+}
+
+    body,input {
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+code, kbd, pre {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  background-color: #f5f5f5;
+}
+
+pre {
+  padding: 1em 0.5em;
+}
+
+table {
+  background: white;
+  border: 1px solid #666;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+
+table thead th,
+table tfoot th {
+  text-align: left;
+  background-color: #eaeaea;
+  color: black;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+table td {
+  color: #222222;
+}
+
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title,
+.callout[data-callout="tldr"]  .callout-title,
+.callout[data-callout="faq"] .callout-title,
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="help"] .callout-title {
+  background-color: #828ee7;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title,
+.callout[data-callout="important"] .callout-title {
+  background-color: #34bbe6;
+}
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  background-color: #a3e048;
+}
+.callout[data-callout="question"] .callout-title,
+.callout[data-callout="todo"] .callout-title {
+  background-color: #49da9a;
+}
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="attention"] .callout-title {
+  background-color: #f7d038;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="missing"] .callout-title,
+.callout[data-callout="bug"] .callout-title {
+  background-color: #eb7532;
+}
+.callout[data-callout="failure"] .callout-title,
+.callout[data-callout="fail"] .callout-title,
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="error"] .callout-title {
+  background-color: #e6261f;
+}
+.callout[data-callout="example"] .callout-title {
+  background-color: #d23be7;
+}
+.callout[data-callout="quote"] .callout-title,
+.callout[data-callout="cite"] .callout-title {
+  background-color: #aaaaaa;
+}
+
+.callout-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+}
+
+svg.svg-icon {
+  height: 18px;
+  width: 18px;
+  stroke-width: 1.75px;
+}
+
+.callout {
+  overflow: hidden;
+  margin: 1em 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.callout-title {
+  padding: .5em;
+  display: flex;
+  gap: 8px;
+  font-size: inherit;
+  color: black;
+  line-height: 1.3em;
+}
+
+.callout-title-inner {
+  font-weight: bold;
+  color: black;
+}
+
+.callout-content {
+  overflow-x: auto;
+  padding: 0.25em .5em;
+  color: #222222;
+  background-color: white !important;
+}
+
+ul.contains-task-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.contains-task-list ul.contains-task-list {
+  padding-left: 2em;
+}
+
+ul.contains-task-list li input[type="checkbox"] {
+  margin-right: .5em;
+}
+
+.callout-table,
+.callout-table tr,
+.callout-table p {
+  width: 100%;
+  padding: 0;
+}
+
+.callout-table td {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.callout-table p {
+  padding-bottom: 0.5em;
+}
+
+.source-table {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+  </style>
+</head>
+<body>
+</div>
+<div>
+  
+  <div
+  style="box-sizing: border-box;"
+  data-reactroot=""
+  id="__next">
+    <div
+    style="box-sizing: border-box; position: absolute; top: 0px; left: 0px; padding: 0px 15px; height: 68px; min-height: 68px; display: flex; align-items: center; width: 1425px; justify-content: space-between;"
+    class="c-PJLV c-PJLV-ibqeuhX-css">
+  </div>
+      
+  <div
+    style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+    background-color: rgb(254, 252, 245); color: rgb(61, 61, 61);"
+    class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-kvUHkC-distribution-around c-PJLV-iflCKMM-css">
+      <div
+      style="box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start; align-self: center; margin-top: 80px; max-width: 960px; padding-left: 120px; padding-right: 120px;"
+      class="c-PJLV c-fixGjY c-fixGjY-JrrAq-alignment-start c-fixGjY-kvUHkC-distribution-around c-PJLV-icNGBEh-css">
+        <div
+        style="box-sizing: border-box; font-weight: 700;
+        color: rgb(61, 61, 61); font-size: 45px; line-height: 53px; padding: 10px 10px 0px; text-align: center;"
+        class="c-PJLV c-PJLV-idobZOj-css">Omnivore 为认真的读者提供免费的read-it-later应用程序
+        </div>
+          <div
+          style="box-sizing: border-box; color: rgb(125, 125, 125); padding: 10px; text-align: center; width: 720px; font-weight: 600;"
+          class="c-PJLV c-PJLV-idhDuOW-css">休闲阅读、保护隐私、开源、专为知识工作者和终身学习者设计。
+          </div>
+            <div
+            style="box-sizing: border-box; color: rgb(125, 125, 125); padding: 10px; text-align: center;"
+            class="c-PJLV c-PJLV-idPMbVR-css">为您保存文章、邮件订阅或文件，等休闲时再去阅读。可以随意添加注释和高亮显示。按自己喜好设定阅读列表。还可与其他个人电子设备同步。
+            </div>
+      <div
+      style="box-sizing: border-box; margin-bottom: 40px; padding: 10px; width: 720px; display: flex; justify-content: center;"
+      class="c-PJLV c-PJLV-idOQdor-css">
+      </div>
+        </div>
+
+  <button
+  class="c-fOyiNI c-fOyiNI-llsIPL-style-ctaDarkYellow c-fOyiNI-iffbcfD-css"
+  style="box-sizing: border-box; padding: 10px 13px; margin: 0px; font-family: Inter; font-size: 14px; line-height: 1.25;
+   color: rgb(61, 61, 61); border: 0px; font-weight: 600; font-style: normal; border-radius: 4px; cursor: pointer;
+   background-color: rgb(255, 210, 52); display: flex; width: 172px; height: 42px; align-items: center; justify-content: center;">免费注册
+  </button>
+
+  <div
+  style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 32px 100px 100px; width: 1224px; max-width: 1224px;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, rgba(253, 250, 236, 0.7), rgba(253, 250, 236, 0.7));
+  background-size: initial, initial; background-attachment: initial, initial; background-origin: initial, initial; background-clip: initial, initial; background-position: ; background-repeat: ;"
+  class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-awKDG-distribution-start c-PJLV-ifoiUNY-css">
+    
+  <div
+    style="box-sizing: border-box; display: flex; justify-content: center; margin-bottom: 120px;"
+    class="c-PJLV c-PJLV-iVEZbG-css">
+      <img style="box-sizing: border-box; width: 826.625px; height: auto;"
+      alt="landingHero-1"
+      srcset="/static/landing/landingPage-03@1x.png,
+      /static/landing/landingPage-03@1x.png 2x,
+      /static/landing/landingPage-03@1x.png 3x"
+      width="1015" height="647" referrerpolicy="no-referrer">
+  </div>
+
+  <div
+    style="box-sizing: border-box; display: flex; flex-flow: row-reverse wrap; align-items: flex-start; justify-content: space-around; width: 1024px; margin-bottom: 20px;"
+    class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-ihxXtgN-css">
+      <div
+      style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 501.75px; align-self: start; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;"
+      class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-bICGYT-distribution-center c-PJLV-ibJhuwu-css">
+        <div
+          style="box-sizing: border-box; font-weight: 700; color: rgb(61, 61, 61); line-height: 1.25; font-size: 45px;"
+          class="c-PJLV c-PJLV-ihatPrn-css">先保存，后阅读
+        </div>
+          <div
+            style="box-sizing: border-box; color: rgb(125, 125, 125);"
+            class="c-PJLV c-PJLV-ikoZSwS-css"><p
+            style="box-sizing: border-box;">看到有趣的内容，但没时间阅读？不论是文章、PDF或是推特线程，只需将它们保存下来，等稍后有空再阅读。Omnivore 应用程序适用于iOS、Android 和主流网络浏览器扩展程序。</p>
+          </div>
+      </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; width: 501.75px; align-self: center; justify-content: center; margin-bottom: 60px;"
+  class="c-PJLV c-PJLV-ieaqSiL-css">
+    <img style="box-sizing: border-box; max-width: 100%;"
+    alt="landing-03"
+    srcset="/static/landing/landingPage-03@2x.png,
+    /static/landing/landingPage-03@2x.png 2x,
+    /static/landing/landingPage-03@2x.png 3x"
+    referrerpolicy="no-referrer">
+    </div>
+  </div>
+
+  <div
+    style="box-sizing: border-box; display: flex; flex-flow: row-reverse wrap; align-items: flex-start; justify-content: space-around; width: 1024px; margin-bottom: 20px;"
+    class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-ihxXtgN-css">
+      <div
+      style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 501.75px; align-self: start; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;"
+      class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-bICGYT-distribution-center c-PJLV-ibJhuwu-css">
+        <div
+        style="box-sizing: border-box; font-weight: 700; color: rgb(61, 61, 61); line-height: 1.25; font-size: 45px;"
+        class="c-PJLV c-PJLV-ihatPrn-css">集合邮件订阅
+        </div>
+          <div
+          style="box-sizing: border-box; color: rgb(125, 125, 125);"
+          class="c-PJLV c-PJLV-ikoZSwS-css"><p
+          style="box-sizing: border-box;">您不再需要到不同收件箱提取订阅的邮件，只要将它们发送到 Omnivore 文库，即可在同一处随心阅读，不受其他电子邮件或 substack 的干扰。</p>
+          </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; width: 501.75px; align-self: center; justify-content: center; margin-bottom: 60px;"
+  class="c-PJLV c-PJLV-ieaqSiL-css">
+    <img style="box-sizing: border-box; max-width: 100%;"
+    alt="landing-04"
+    srcset="/static/landing/landingPage-04@2x.png,
+    /static/landing/landingPage-04@2x.png 2x,
+    /static/landing/landingPage-04@2x.png 3x" referrerpolicy="no-referrer">
+    </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; flex-flow: row-reverse wrap; align-items: flex-start; justify-content: space-around; width: 1024px; margin-bottom: 20px;"
+  class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-ihxXtgN-css">
+    <div
+    style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 501.75px; align-self: start; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;"
+    class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-bICGYT-distribution-center c-PJLV-ibJhuwu-css">
+      <div
+      style="box-sizing: border-box; font-weight: 700; color: rgb(61, 61, 61); line-height: 1.25; font-size: 45px;"
+      class="c-PJLV c-PJLV-ihatPrn-css">按喜好组织阅读系统
+    </div>
+      <div
+      style="box-sizing: border-box; color: rgb(125, 125, 125);"
+      class="c-PJLV c-PJLV-ikoZSwS-css"><p
+      style="box-sizing: border-box;">我们不会限定您如何组织系统，只提供您所需的工具，如标签、过滤(筛选)器和完整的文本索引搜索，让您按自己的喜好和需求设定组织规则。</p>
+      </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; width: 501.75px; align-self: center; justify-content: center; margin-bottom: 60px;"
+  class="c-PJLV c-PJLV-ieaqSiL-css">
+    <img style="box-sizing: border-box; max-width: 100%;"
+    alt="landing-05"
+    srcset="/static/landing/landingPage-05@2x.png,
+    /static/landing/landingPage-05@2x.png 2x,
+    /static/landing/landingPage-05@2x.png 3x"
+    referrerpolicy="no-referrer">
+    </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; flex-flow: row-reverse wrap; align-items: flex-start; justify-content: space-around; width: 1024px; margin-bottom: 20px;"
+  class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-ihxXtgN-css">
+    <div
+    style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 501.75px; align-self: start; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;"
+    class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-bICGYT-distribution-center c-PJLV-ibJhuwu-css">
+      <div
+      style="box-sizing: border-box; font-weight: 700; color: rgb(61, 61, 61); line-height: 1.25; font-size: 45px;"
+      class="c-PJLV c-PJLV-ihatPrn-css">添加高亮和注释
+      </div>
+        <div
+        style="box-sizing: border-box; color: rgb(125, 125, 125);"
+        class="c-PJLV c-PJLV-ikoZSwS-css"><p
+        style="box-sizing: border-box;">想提高阅读效率？积极动用大脑，为关键的段落添加高亮或注释，能提高您阅读记忆的保留。这些标注将永久保存在文件里，方便您随时搜索使用。</p>
+        </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; width: 501.75px; align-self: center; justify-content: center; margin-bottom: 60px;"
+  class="c-PJLV c-PJLV-ieaqSiL-css">
+    <img style="box-sizing: border-box; max-width: 100%;"
+    alt="landing-06"
+    srcset="/static/landing/landingPage-06@2x.png,
+    /static/landing/landingPage-06@2x.png 2x,
+    /static/landing/landingPage-06@2x.png 3x"
+    referrerpolicy="no-referrer">
+    </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; flex-flow: row-reverse wrap; align-items: flex-start; justify-content: space-around; width: 1024px; margin-bottom: 20px;"
+  class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-ihxXtgN-css">
+    <div
+    style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 501.75px; align-self: start; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;"
+    class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-bICGYT-distribution-center c-PJLV-ibJhuwu-css">
+      <div
+      style="box-sizing: border-box; font-weight: 700; color: rgb(61, 61, 61); line-height: 1.25; font-size: 45px;"
+      class="c-PJLV c-PJLV-ihatPrn-css">与您的“第二大脑”同步
+      </div>
+        <div
+        style="box-sizing: border-box; color: rgb(125, 125, 125);"
+        class="c-PJLV c-PJLV-ikoZSwS-css"><p
+        style="box-sizing: border-box;">Omnivore 应用程序能与个人知识管理系统如 Logseq 和 Obsidian 同步，让您轻而易举地集成所有保存文章、高亮和注释。</p>
+        </div>
+    </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; width: 501.75px; align-self: center; justify-content: center; margin-bottom: 60px;"
+  class="c-PJLV c-PJLV-ieaqSiL-css">
+    <img style="box-sizing: border-box; max-width: 100%;"
+    alt="landing-07"
+    srcset="/static/landing/landingPage-07@2x.png,
+    /static/landing/landingPage-07@2x.png 2x,
+    /static/landing/landingPage-07@2x.png 3x"
+    referrerpolicy="no-referrer">
+    </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; flex-flow: row-reverse wrap; align-items: flex-start; justify-content: space-around; width: 1024px; margin-bottom: 20px;"
+  class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-ihxXtgN-css">
+    <div
+    style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 501.75px; align-self: start; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;"
+    class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-bICGYT-distribution-center c-PJLV-ibJhuwu-css">
+      <div
+      style="box-sizing: border-box; font-weight: 700; color: rgb(61, 61, 61); line-height: 1.25; font-size: 45px;"
+      class="c-PJLV c-PJLV-ihatPrn-css">使用 text-to-speech 功能聆听阅读
+      </div>
+        <div
+        style="box-sizing: border-box; color: rgb(125, 125, 125);"
+        class="c-PJLV c-PJLV-ikoZSwS-css"><p
+        style="box-sizing: border-box;">使用TTS超真实、自然的人工智能声音为您阅读待读列表中的读物，让眼睛好好休息一下。这便是我们 iOS 版 Omnivore 应用程序的独家功能。</p>
+        </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; width: 501.75px; align-self: center; justify-content: center; margin-bottom: 60px;"
+  class="c-PJLV c-PJLV-ieaqSiL-css">
+    <img style="box-sizing: border-box; max-width: 100%;"
+    alt="landing-08"
+    srcset="/static/landing/landingPage-08@2x.png,
+    /static/landing/landingPage-08@2x.png 2x,
+    /static/landing/landingPage-08@2x.png 3x"
+    referrerpolicy="no-referrer">
+    </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; flex-flow: row-reverse wrap; align-items: flex-start; justify-content: space-around; width: 1024px; margin-bottom: 20px;"
+  class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-ihxXtgN-css">
+    <div
+    style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 501.75px; align-self: start; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;"
+    class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-bICGYT-distribution-center c-PJLV-ibJhuwu-css">
+      <div
+      style="box-sizing: border-box; font-weight: 700; color: rgb(61, 61, 61); line-height: 1.25; font-size: 45px;"
+      class="c-PJLV c-PJLV-ihatPrn-css">开源软件给予您控制权
+      </div>
+        <div
+        style="box-sizing: border-box; color: rgb(125, 125, 125);"
+        class="c-PJLV c-PJLV-ikoZSwS-css"><p
+        style="box-sizing: border-box;">阅读是终身的一种生活方式，不应担心失去自己多年辛苦建立的文库。我们的开源平台，就是为了确保您的阅读不会受限于任何专有系统。</p>
+        </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; width: 501.75px; align-self: center; justify-content: center; margin-bottom: 60px;"
+  class="c-PJLV c-PJLV-ieaqSiL-css">
+    <img style="box-sizing: border-box; max-width: 100%;"
+    alt="landing-09"
+    srcset="/static/landing/landingPage-09@2x.png,
+    /static/landing/landingPage-09@2x.png 2x,
+    /static/landing/landingPage-09@2x.png 3x"
+    referrerpolicy="no-referrer">
+    </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+  background-color: white; border-radius: 24px; border: 1px solid rgb(216, 215, 213); box-shadow: rgba(32, 31, 29, 0.03) 0px 7px 8px, rgba(32, 31, 29, 0.03) 0px 18px 24px; padding: 40px; margin-top: 64px; width: 972.796875px;"
+  class="c-PJLV c-fixGjY c-fixGjY-jroWjL-alignment-center c-fixGjY-kvUHkC-distribution-around c-PJLV-idHfUdj-css">
+    <div 
+    class="c-PJLV c-PJLV-iheWKxs-css" 
+    style="box-sizing: border-box; color: rgb(61, 61, 61); font-weight: 700; font-size: 64px; line-height: 1.25; text-align: center; padding-bottom: 20px;
+    caret-color: rgb(61, 61, 61); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-style: normal; font-variant-caps: normal; 
+    letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration: none;">立即开始使用 Omnivore
+    </div>
+    <button 
+    class="c-fOyiNI c-fOyiNI-llsIPL-style-ctaDarkYellow c-fOyiNI-iffbcfD-css" 
+    style="box-sizing: border-box; padding: 10px 13px; margin: 0px; font-family: Inter; font-size: 14px; line-height: 1.25;
+    color: rgb(61, 61, 61); border: 0px; font-weight: 600; font-style: normal; border-radius: 4px; cursor: pointer; 
+    background-color: rgb(255, 210, 52); display: flex; width: 172px; height: 42px; align-items: center; justify-content: center; 
+    caret-color: rgb(61, 61, 61); orphans: auto; white-space: normal; widows: auto; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; text-decoration: none;">免费注册
+    </button>
+  </div>
+  </div>
+  </div>
+
+  <div
+  style="box-sizing: border-box; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around; padding: 60px 5vw 105px 140px;
+  background-color: rgb(37, 37, 37); width: 1425px;"
+  class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-idSMaTw-css">
+	<div
+	style="box-sizing: border-box; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around; width: 1213px; max-width: 1224px;"
+	class="c-PJLV c-bZNrxE c-bZNrxE-JrrAq-alignment-start c-bZNrxE-kvUHkC-distribution-around c-PJLV-ifUyzGY-css">
+		<div
+		style="box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start;"
+		class="c-PJLV c-fixGjY c-fixGjY-JrrAq-alignment-start c-fixGjY-kvUHkC-distribution-around"><p
+		style="box-sizing: border-box; font-family: inter; font-weight: bold; line-height: unset; color: white; padding-top: 0px; margin: 0px; font-size: 24px;"
+		class="c-bjsKpw c-bjsKpw-lczpzb-style-aboutFooter">安装</p><ul
+		style="box-sizing: border-box; list-style: none; padding-left: 0px;"
+		class="c-khsPpq">
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://omnivore.app/install/ios"
+      target="_blank"
+      rel="noopener">iOS 客户端</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://omnivore.app/install/macos"
+      target="_blank"
+      rel="noopener">macOS 客户端</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://omnivore.app/install/android"
+      target="_blank"
+      rel="noopener">Android (预览版)</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://omnivore.app/install/chrome"
+      target="_blank"
+      rel="noopener">Chrome 浏览器扩展</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://omnivore.app/install/firefox"
+      target="_blank"
+      rel="noopener">Firefox 浏览器扩展</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://omnivore.app/install/safari"
+      target="_blank"
+      rel="noopener">Safari 浏览器扩展</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://omnivore.app/install/edge"
+      target="_blank"
+      rel="noopener">Edge 浏览器扩展</a></li></ul>
+    </div>
+    <div
+      style="box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start;"
+      class="c-PJLV c-fixGjY c-fixGjY-JrrAq-alignment-start c-fixGjY-kvUHkC-distribution-around"><p
+      style="box-sizing: border-box; font-family: inter; font-weight: bold; line-height: unset; color: white; padding-top: 0px; margin: 0px; font-size: 24px;"
+      class="c-bjsKpw c-bjsKpw-lczpzb-style-aboutFooter">获取帮助</p><ul
+      style="box-sizing: border-box; list-style: none; padding-left: 0px;"
+      class="c-khsPpq">
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="mailto:feedback@omnivore.app"
+      target="_blank"
+      rel="noopener">通过电子邮件联系我们</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://discord.gg/h2z5rppzz9"
+      target="_blank"
+      rel="noopener">加入我们的 Discord 社区</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://docs.omnivore.app/zh"
+      target="_blank"
+      rel="noopener">阅读我们的文档</a></li></ul>
+    </div>
+    <div
+      style="box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start;"
+      class="c-PJLV c-fixGjY c-fixGjY-JrrAq-alignment-start c-fixGjY-kvUHkC-distribution-around"><p
+      style="box-sizing: border-box; font-family: inter; font-weight: bold; line-height: unset; color: white; padding-top: 0px; margin: 0px; font-size: 24px;"
+      class="c-bjsKpw c-bjsKpw-lczpzb-style-aboutFooter">关注</p><ul
+      style="box-sizing: border-box; list-style: none; padding-left: 0px;"
+      class="c-khsPpq"><li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://twitter.com/OmnivoreApp"
+      target="_blank"
+      rel="noopener">Twitter</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://pkm.social/@omnivore"
+      target="_blank"
+      rel="noopener">Mastodon</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://blog.omnivore.app/"
+      target="_blank"
+      rel="noopener">博客</a></li>
+      <li
+      style="box-sizing: border-box; padding-top: 15px;"><a
+      style="box-sizing: border-box; color: rgb(255, 210, 52); text-decoration: none;"
+      href="https://github.com/omnivore-app/omnivore"
+      target="_blank"
+      rel="noopener">GitHub</a></li></ul>
+    </div>
+  </div>
+  </div>
+  </div>
+    <br
+    class="Apple-interchange-newline">
+    </div>
+</body>
+</html>
