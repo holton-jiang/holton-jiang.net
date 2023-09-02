@@ -1,42 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>蒋小霕个人网站</title>
-    <style>
-		body {
-			margin: 2em;
-			font: 16px -apple-system, sans-serif;
-			line-height: 1.333em;
-		}
-		header {
-			text-align: center;
-		}
-		@media (prefers-color-scheme: dark) {
-			body {
-				background-color: #222;
-				color: #eee;
-			}
-			img {
-				filter: invert(1);
-			}
-		}
-    </style>
-  </head>
-  <body>
-  
-	<header>
-	<!--  <img src="image/suse.svg"/ width = "128" height = "128" alt = "svg">  -->
-		<h3>欢迎访问 蒋小霕的个人网站！</h3>
-	</header>
-	
-	<p>这是我的个人主页，你可以称呼我：蒋小霕。</p>
+<html>
+<head>
+  <title>蒋小霕的个人网站</title>
+  <style>
+    
+:root {
+  --default-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-monospace: 'Source Code Pro', monospace;
+  --background-primary: #ffffff;
+  --background-modifier-border: #ddd;
+  --text-accent: #705dcf;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: #2e3338;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --text-muted: #888888;
+  --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --text-error: #E4374B;
+  --background-primary-alt: '#fafafa';
+  --background-accent: '';
+  --interactive-accent: hsl( 254,  80%, calc( 68% + 2.5%));
+  --background-modifier-error: #E4374B;
+}
+
+    body,input {
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+code, kbd, pre {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  background-color: #f5f5f5;
+}
+
+pre {
+  padding: 1em 0.5em;
+}
+
+table {
+  background: white;
+  border: 1px solid #666;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+
+table thead th,
+table tfoot th {
+  text-align: left;
+  background-color: #eaeaea;
+  color: black;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+table td {
+  color: #222222;
+}
+
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title,
+.callout[data-callout="tldr"]  .callout-title,
+.callout[data-callout="faq"] .callout-title,
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="help"] .callout-title {
+  background-color: #828ee7;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title,
+.callout[data-callout="important"] .callout-title {
+  background-color: #34bbe6;
+}
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  background-color: #a3e048;
+}
+.callout[data-callout="question"] .callout-title,
+.callout[data-callout="todo"] .callout-title {
+  background-color: #49da9a;
+}
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="attention"] .callout-title {
+  background-color: #f7d038;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="missing"] .callout-title,
+.callout[data-callout="bug"] .callout-title {
+  background-color: #eb7532;
+}
+.callout[data-callout="failure"] .callout-title,
+.callout[data-callout="fail"] .callout-title,
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="error"] .callout-title {
+  background-color: #e6261f;
+}
+.callout[data-callout="example"] .callout-title {
+  background-color: #d23be7;
+}
+.callout[data-callout="quote"] .callout-title,
+.callout[data-callout="cite"] .callout-title {
+  background-color: #aaaaaa;
+}
+
+.callout-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+}
+
+svg.svg-icon {
+  height: 18px;
+  width: 18px;
+  stroke-width: 1.75px;
+}
+
+.callout {
+  overflow: hidden;
+  margin: 1em 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.callout-title {
+  padding: .5em;
+  display: flex;
+  gap: 8px;
+  font-size: inherit;
+  color: black;
+  line-height: 1.3em;
+}
+
+.callout-title-inner {
+  font-weight: bold;
+  color: black;
+}
+
+.callout-content {
+  overflow-x: auto;
+  padding: 0.25em .5em;
+  color: #222222;
+  background-color: white !important;
+}
+
+ul.contains-task-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.contains-task-list ul.contains-task-list {
+  padding-left: 2em;
+}
+
+ul.contains-task-list li input[type="checkbox"] {
+  margin-right: .5em;
+}
+
+.callout-table,
+.callout-table tr,
+.callout-table p {
+  width: 100%;
+  padding: 0;
+}
+
+.callout-table td {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.callout-table p {
+  padding-bottom: 0.5em;
+}
+
+.source-table {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+  </style>
+</head>
+<body>
+<div><h3 data-heading="欢迎访问 蒋小霕的个人网站！">欢迎访问 蒋小霕的个人网站！</h3>
+<p>这是我的个人主页，你可以称呼我艺名：蒋小霕。 </p>
 <ul>
-<li>最近<a aria-label-position="top" aria-label="https://github.com/omnivore-app/omnivore/blob/main/apple/OmnivoreKit/Sources/Views/Resources/zh-Hans.lproj/Localizable.strings" rel="noopener" class="external-link" href="https://github.com/omnivore-app/omnivore/blob/main/apple/OmnivoreKit/Sources/Views/Resources/zh-Hans.lproj/Localizable.strings" target="_blank">翻译</a>完 <a aria-label-position="top" aria-label="https://apps.apple.com/hk/app/omnivore-read-it-later/id1564031042" rel="noopener" class="external-link" href="https://apps.apple.com/hk/app/omnivore-read-it-later/id1564031042" target="_blank">Omnivore 应用程序</a>，以及<a aria-label-position="top" aria-label="https://docs.omnivore.app/zh/" rel="noopener" class="external-link" href="https://docs.omnivore.app/zh/" target="_blank">使用手册</a>相关的简体中文翻译。</li>
-<li>也<a aria-label-position="top" aria-label="https://github.com/glushchenko/fsnotes/pull/1466" rel="noopener" class="external-link" href="https://github.com/glushchenko/fsnotes/pull/1466" target="_blank">翻译</a>完 <a aria-label-position="top" aria-label="https://apps.apple.com/hk/app/fsnotes-manager/id1346501102" rel="noopener" class="external-link" href="https://apps.apple.com/hk/app/fsnotes-manager/id1346501102" target="_blank">FSnote 移动应用程序</a>和改进桌面端翻译。</li>
-<li>于23年6月7号之后更新《openSUSE 中文手册》翻译网站。</li>
+<li><a data-tooltip-position="top" aria-label="https://github.com/omnivore-app/omnivore/blob/main/apple/OmnivoreKit/Sources/Views/Resources/zh-Hans.lproj/Localizable.strings" rel="noopener" class="external-link" href="https://github.com/omnivore-app/omnivore/blob/main/apple/OmnivoreKit/Sources/Views/Resources/zh-Hans.lproj/Localizable.strings" target="_blank">已翻译完</a> 稍后阅读应用 Omnivore 和相关 <a data-tooltip-position="top" aria-label="https://docs.omnivore.app/zh/" rel="noopener" class="external-link" href="https://docs.omnivore.app/zh/" target="_blank">使用手册</a> 。 </li>
+<li><a data-tooltip-position="top" aria-label="https://github.com/glushchenko/fsnotes/pull/1466" rel="noopener" class="external-link" href="https://github.com/glushchenko/fsnotes/pull/1466" target="_blank">已翻译完</a> Markdown笔记应用 FSnote 和改进桌面端翻译。</li>
+<li>开发《openSUSE 中文手册》网站。</li>
+<li><a data-tooltip-position="top" aria-label="https://github.com/anyproto/anytype-swift/pull/308" rel="noopener" class="external-link" href="https://github.com/anyproto/anytype-swift/pull/308" target="_blank">已翻译完</a>开源笔记应用 Anytype 的 iOS 和安卓移动端。</li>
 </ul>
-<p>希望能够翻译更多的开源项目，帮助到中文用户，如果您觉得有辞不达意的地方请联系我的 E-Mail📮:<a aria-label-position="top" aria-label="mailto:holton.jiang@gmail.com" rel="noopener" class="external-link" href="mailto:holton.jiang@gmail.com" target="_blank">holton.jiang@gmail.com</a>。</p>
-	
-  </body>
+<p>希望能够翻译更多的开源项目，帮助到中文用户，如果您觉得有辞不达意的地方请联系我的 E-Mail📮: <a data-tooltip-position="top" aria-label="mailto:holton.jiang@gmail.com" rel="noopener" class="external-link" href="mailto:holton.jiang@gmail.com" target="_blank">holton.jiang@gmail.com</a></p></div>
+</body>
 </html>
